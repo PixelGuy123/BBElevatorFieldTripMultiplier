@@ -16,11 +16,11 @@ namespace BBElevatorFieldTripMultiplier.Plugin
 
 			i = this;
 
-			fieldTripAmount = Config.Bind("Settings", "FieldTrip Amount", 1);
+			fieldTripAmount = Config.Bind("Settings", "FieldTrip Amount", 2);
 			if (fieldTripAmount.Value <= 0)
 				fieldTripAmount.BoxedValue = 1;
 
-			elevatorMultiplier = Config.Bind("Settings", "Elevator Multiplier", 1);
+			elevatorMultiplier = Config.Bind("Settings", "Elevator Multiplier", 2);
 			if (elevatorMultiplier.Value <= 0)
 				elevatorMultiplier.BoxedValue = 1;
 		}
